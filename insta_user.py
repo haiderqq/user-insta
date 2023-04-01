@@ -1,6 +1,37 @@
+from datetime import *
+
+def dan(y=0,m=0,d=0):
+ date = datetime.now()
+ if len(list(str(y))) == 4:
+  if m <= 12 and m > 0:
+   if d <= 31 and d > 0:
+    if date.year <= y:
+     if date.month <= m:
+      if date.day < d:
+       return True
+x = dan(2023,4,3)
+     #هنا تخلي تاريخ الايقاف
+if x:pass
+else:quit(' Bad TM STOB !!!')
+print(" God \n Tele : @hd0r3 ")
+import os
+import time
+import sys
+import pyfiglet
+
+A = '\033[1;31m'
+
+HAS = 'haider'
+#هنا الباسورد تكدر تغيره تتحكم بي
+
+pas = input(A+'ادخل باسورد الادات : ')
+if pas == HAS:
+ print('God pass')
+else:
+ exit('Ererr pass')
+
 import requests
 import random
-
 print(' @hd0r3 - @baqertools')
 print('\n')
 user = 'qwertyuiopasdfghjklzxcvbnm1234567890'
@@ -12,7 +43,7 @@ def zz():
 	 	us = str("".join(random.choice(user)for x in range(1)))
 	 	um = str("".join(random.choice(user)for x in range(1)))
 	 	ur = str("".join(random.choice(user)for x in range(1)))
-	 	usery= us+us+'.'+um+ur
+	 	usery= us+us+'_'+um+ur
 	 	url = 'https://i.instagram.com/api/v1/accounts/create/'
 	 	he = {
 	'Content-Length': '437',
